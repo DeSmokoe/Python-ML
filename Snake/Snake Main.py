@@ -70,12 +70,10 @@ def main():
 
     win = pygame.display.set_mode((WIN_WIDTH, WIN_HEIGHT))
 
-    run = True
-    while run:
+    while True:
         clock.tick(30)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                run = False
                 pygame.quit()
                 quit()
         draw_field(win, snake, foods, score)
