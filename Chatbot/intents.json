@@ -1,0 +1,13 @@
+{"intents":  [
+      {"tag":  "greeting",
+      "patterns":  ["Hey", "Hoe gaat\'ie?", "Hallo"],
+      "responses": ["Hallo!", "Hey, hoe gaat het met jou?", "Hey daar!"],
+      "Context_set": ""
+      },
+      {"tag":  "goodbye",
+      "patterns":  ["Dag dag!", "Tot de volgende!", "Ik ga slapen"],
+      "responses": ["Toedeloekes xoxo", "Adios!", "Bye amigo."],
+      "Context_set": ""
+      }
+  ]
+}
