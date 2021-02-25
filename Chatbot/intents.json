@@ -1,13 +1,53 @@
 {"intents":  [
-      {"tag":  "greeting",
-      "patterns":  ["Hey", "Hoe gaat\'ie?", "Hallo"],
-      "responses": ["Hallo!", "Hey, hoe gaat het met jou?", "Hey daar!"],
+      {"tag":  "Gedag",
+      "patterns":  ["Hey", "Hoe gaat'ie?", "Hallo", "heeeey", "gegroet", "hallooooo", "hallooo", "hallooooooooo", "heeeeeeyyy"],
+      "responses": ["Hallo!", "Hey hey!", "Hey daar!"],
       "Context_set": ""
       },
-      {"tag":  "goodbye",
-      "patterns":  ["Dag dag!", "Tot de volgende!", "Ik ga slapen"],
+      {"tag":  "Vaarwel",
+      "patterns":  ["Dag dag!", "Tot de volgende!", "Ik ga slapen", "bye bye", "bye", "toedeloekes", "kga door", "kga slapen"],
       "responses": ["Toedeloekes xoxo", "Adios!", "Bye amigo."],
       "Context_set": ""
+      },
+      {"tag":  "Test",
+      "patterns":  ["test"],
+      "responses": ["Test"],
+      "Context_set": ""
+      },
+      {"tag":  "IMBIT praesidium",
+      "patterns":  ["Wie is IMBIT?", "Wie zit er bij IMBIT?", "Wat is het praesidium?", "Zit x in het praesidium?", "Met hoeveel is IMBIT?", "Heeft IMBIT een groot praesidum?"],
+      "responses": ["Ons praesidium bestaat uit: Tim, Toon, Ruth, Aleksandra, Ine, Emilia, Loes, Alex en Matisse"],
+      "Context_set": ""
+      },
+      {"tag":  "BOT wie",
+      "patterns":  ["Wie heeft deze bot gemaakt?", "Van waar komt deze bot?", "Waar krijg ik een chatbot?", "Hoe komt ge aan een chatbot?"],
+      "responses": ["Onze web&media Alex heeft deze chatbot gemaakt!"],
+      "Context_set": ""
+      },
+      {"tag":  "BOT wat",
+      "patterns":  ["Wat is dit?", "Wat moet ik doen?", "Hoe werkt dit?", "Hoe werkt de bot?"],
+      "responses": ["Ik ben een chatbot. Stel een vraag en ik zal proberen te antwoorden!"],
+      "Context_set": ""
+      },
+      {"tag":  "BOT hoe",
+      "patterns":  ["Hoe is deze bot gemaakt?", "Hoe is deze bot geprogrammeerd?", "Met welk systeem werkt deze chatbot?", "Hoe werk jij?", "Hoe ben jij gemaakt?", "Wat ben jij?"],
+      "responses": ["De chatbot is geprogrammeerd in Python met behulp van machine learning algoritmes!", "Ik ben een Python/Machine Learning project van Alex"],
+      "Context_set": ""
+      },
+      {"tag":  "Emilia rijden",
+      "patterns":  ["Kan Emilia rijden?", "Rijdt Emilia veilig?", "Is het veilig om mee te rijden met Emilia?", "Hoe rijdt Emilia?"],
+      "responses": ["Emilia kan absoluut niet rijden", "Als ik het zo mag zeggen: ik zou niet bij Emilia instappen", "De overlevingskans van mee te rijden met Emilia is infinitesimaal klein"],
+      "Context_set": ""
+      },
+      {"tag":  "Schelden",
+      "patterns":  ["kut", "kaka", "kak", "pipi", "fuck", "fok", "fuck you", "klote", "klotezooi", "piemel", "vagina", "tering", "teringlijer", "kanker", "kankerzooi", "loser", "kutding"],
+      "responses": ["Bij IMBIT blijven we altijd beleefd!", "Niet zo onbeleefd zijn!", "Dat soort taalgebruik accepteren we hier niet!"],
+      "Context_set": ""
+      },
+      {"tag":  "Alex",
+      "patterns":  ["Wie is Alex?", "Wat doet Alex", "Wat studeert Alex?", "Alex", "Wie is uw web?", "Wie is uw web & media?", "Wie is de web?", "Wie is de web & media van imbit?", "Wie beheert de social media?", "Wie beheert de website?", "Wie zet dingen online?", "Wie heeft deze discord gemaakt?", "Van wie is deze discord?"],
+      "responses": ["Onze Web & Media is Alex! Hij zit in zijn 3de bachelor HIB.", "Alex is onze Web & Media en zit in zijn 3de jaar HIB!"],
+      "Context_set": ""
       }
-  ]
+]
 }
