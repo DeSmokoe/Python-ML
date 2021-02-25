@@ -15,9 +15,9 @@ client = discord.Client()
 
 @client.event
 async def on_member_join(member):
-    for channel in member.server.channels:
+    for channel in member.guild.channels:
         if str(channel) == "algemeen":
-            await client.send_message(f"""Welkom in onze server {member.mention}!""")
+            await channel.send(f"""Welkom in onze server {member.mention}!""")
 
 
 @client.event
@@ -34,6 +34,22 @@ async def on_message(message):
     else:
         print(f"""Gebruiker:{message.author} heeft {message.content} geprobeerd in  #{message.channel}""")
 
+    if message.content == "!help":
+        embed = discord.Embed(title="Help pagina", description="IMBIT bot commands")
+        embed.add_field(name="!hello", value="Groet")
+        embed.add_field(name="!users", value="Print het aantal leden")
+        await message.channel.send(content=None, embed=embed)
+
+@client.event
+async def on_member_update(before, after):
+    n = after.nick
+    if n:
+        if n.lower().count("imbit") > 0:
+            last = before.nick
+            if last:
+                await after.edit(nick=last)
+            else:
+                await after.edit(nick="Da gaan we ni doen")
+
 
 client.run(token)
-
