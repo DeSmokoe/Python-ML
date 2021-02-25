@@ -1,0 +1,4 @@
+discord[voice]
+PyNaCl
+async-timeout
+dnspython
