@@ -6,6 +6,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 cancer = datasets.load_breast_cancer()
 
+
 #print(cancer.feature_names)
 #print(cancer.target_names)
 
